@@ -27,6 +27,7 @@ jobs:
           mkdir -p assets
           pandoc README.md -o assets/README.pdf --pdf-engine=weasyprint
           pandoc README_zh.md -o assets/README_zh.pdf --pdf-engine=weasyprint
+          pandoc README_ja.md -o assets/README_ja.pdf --pdf-engine=weasyprint
 
       - name: Commit PDFs
         run: |
