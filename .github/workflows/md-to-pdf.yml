@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y fonts-noto-cjk weasyprint
+          sudo apt-get install -y fonts-noto-cjk pandoc weasyprint
 
       - name: Convert Markdown to PDF
         run: |
