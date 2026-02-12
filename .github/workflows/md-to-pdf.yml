@@ -30,11 +30,12 @@ jobs:
       - name: Create assets directory
         run: mkdir -p assets
 
-      - name: Convert README.md
-        run: md-to-pdf README.md --as-html --dest assets/README.pdf
-
-      - name: Convert README_zh.md
-        run: md-to-pdf README_zh.md --as-html --dest assets/README_zh.pdf
+      - name: Convert Markdown to PDF
+        run: |
+          md-to-pdf README.md --as-html
+          md-to-pdf README_zh.md --as-html
+          mv README.pdf assets/
+          mv README_zh.pdf assets/
 
       - name: Commit PDFs
         run: |
