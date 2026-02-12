@@ -17,25 +17,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install CJK fonts
-        run: sudo apt-get update && sudo apt-get install -y fonts-noto-cjk
-
-      - name: Install md-to-pdf
-        run: npm install -g md-to-pdf
-
-      - name: Create assets directory
-        run: mkdir -p assets
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk weasyprint
 
       - name: Convert Markdown to PDF
         run: |
-          md-to-pdf README.md --as-html
-          md-to-pdf README_zh.md --as-html
-          mv README.pdf assets/
-          mv README_zh.pdf assets/
+          mkdir -p assets
+          pandoc README.md -o assets/README.pdf --pdf-engine=weasyprint
+          pandoc README_zh.md -o assets/README_zh.pdf --pdf-engine=weasyprint
 
       - name: Commit PDFs
         run: |
