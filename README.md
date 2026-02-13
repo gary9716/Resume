@@ -5,6 +5,7 @@
 ### **Technical Profile**
 
 * **Backend**: Node.js, TypeScript, C#, Move (Sui), Microservices, RESTful APIs
+* **Database**: MySQL, PostgreSQL, Schema Design, Index Optimization
 * **Infrastructure**: AWS (ECS, SQS, RDS), **Terraform (IaC)**, Docker, GitHub Actions
 * **Quant**: Financial Backtesting, API Integration (Bybit/Finlab), Risk Control
 * **Specialties**: Automated Testing (90% Coverage), PID Control, RS232, LLM Agents
@@ -18,6 +19,7 @@
 *Jan 2024 – Feb 2026*
 
 * **High-Reliability Payment Architecture**: Integrated payment gateways (Stripe, Wise) using Adapter patterns. Designed a **dual-layer reconciliation system** with **AWS SQS** and **cron-based async repair** to ensure eventual consistency and guaranteed idempotency.
+* **Database Schema Design**: Designed primary keys, foreign keys, and indexes based on data access patterns. Built **MySQL/PostgreSQL** schemas that balance query performance with data integrity.
 * **Infrastructure as Code**: Managed scalable ECS/RDS/SQS stacks via **Terraform Modules**, maintaining **99% SLA** and consistent environment parity.
 * **Performance Engineering**: Conducted heap snapshot analysis to diagnose memory leaks, reducing memory usage from **40% to 3%**; achieved **90% unit/integration test coverage**.
 

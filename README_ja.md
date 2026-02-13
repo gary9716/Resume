@@ -5,6 +5,7 @@
 ### **技術スキル (Technical Skills)**
 
 * **バックエンド**: Node.js, TypeScript, C#, Move (Sui), RESTful API, Microservices.
+* **データベース**: MySQL, PostgreSQL, スキーマ設計, インデックス最適化.
 * **インフラ・運用**: AWS (ECS, SQS, RDS), **Terraform (IaC)**, Docker, GitHub Actions.
 * **金融・データ**: クオンツバックテスト, Bybit/Finlab API 連携, リスク管理アルゴリズム.
 * **専門技術**: 自動テスト (カバレッジ 90%), ハードウェア連携 (RS232, PID 制御, DMX), LLM エージェントワークフロー.
@@ -18,6 +19,7 @@
 *2024.01 – 2026.02*
 
 * **高信頼性決済アーキテクチャ**: Adapter パターンにより Stripe・Wise 等の決済ゲートウェイを統合。**AWS SQS** と **Cron ベース非同期リペア**による**二層照合メカニズム**を設計し、最終整合性と 100% 冪等性を実現。
+* **データベーススキーマ設計**: データアクセスパターンに基づき主キー・外部キー・インデックスを設計。クエリ最適化とデータ整合性を両立する **MySQL/PostgreSQL** スキーマを構築。
 * **Infrastructure as Code**: **Terraform** モジュールで ECS・RDS・SQS を管理し、テスト/本番環境間の構成一致性を確保。**99% SLA** を維持。
 * **パフォーマンス最適化**: Heap Snapshot 解析によりメモリリークを特定・修正し、メモリ使用率を **40% → 3%** に削減。コアシステムの**テストカバレッジ 90%** を維持。
 

@@ -5,6 +5,7 @@
 ### **技術總覽 (Technical Skills)**
 
 * **後端與架構**：Node.js, TypeScript, C#, Move (Sui), RESTful API, Microservices.
+* **資料庫**：MySQL, PostgreSQL, Schema 設計, 索引優化.
 * **雲端與運維**：AWS (ECS, SQS, RDS), **Terraform (IaC)**, Docker, GitHub Actions.
 * **數據與金融**：量化策略回測, Bybit/Finlab API 整合, 風險控管演算法.
 * **專項技術**：自動化測試 (Coverage 90%), 軟硬體整合 (RS232, PID Control, DMX), LLM Agentic Workflow.
@@ -18,6 +19,7 @@
 *2024.01 – 2026.02*
 
 * **高可靠金流架構設計**：以 Adapter 模式整合 Stripe、Wise 等支付閘道。設計以 **AWS SQS** 與 **Cron-job 異步補件 (Async Repair)** 組成的**雙層對帳機制**，確保最終一致性與 100% 冪等處理。
+* **資料庫 Schema 設計**：根據資料存取模式設計主鍵、外鍵與索引，建構兼顧查詢效能與資料一致性的 **MySQL/PostgreSQL** Schema。
 * **基礎設施即代碼 (IaC)**：利用 **Terraform** 模組化管理 ECS、RDS 與 SQS，確保測試與生產環境配置對齊，並維護 **99% SLA**。
 * **深度效能優化**：分析 Heap Snapshot 修復記憶體洩漏，使佔用率從 **40% 降至 3%**；維持核心系統 **90% 測試覆蓋率**。
 
