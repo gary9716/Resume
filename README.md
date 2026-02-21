@@ -18,7 +18,7 @@
 
 *Jan 2024 – Feb 2026*
 
-* **High-Reliability Payment Architecture**: Integrated payment gateways (Stripe, Wise) using Adapter patterns. Designed a **dual-layer reconciliation system** with **AWS SQS** and **cron-based async repair** to ensure eventual consistency and guaranteed idempotency.
+* **High-Reliability Payment Architecture**: Integrated payment gateways (Stripe, Wise) using Adapter patterns. Designed a **dual-layer reconciliation system** with **Webhook (event-driven)** and **cron-based async repair** to ensure eventual consistency and guaranteed idempotency.
 * **Database Schema Design**: Designed primary keys, foreign keys, and indexes based on data access patterns. Built **MySQL/PostgreSQL** schemas that balance query performance with data integrity.
 * **Infrastructure as Code**: Managed scalable ECS/RDS/SQS stacks via **Terraform Modules**, maintaining **99% SLA** and consistent environment parity.
 * **Performance Engineering**: Conducted heap snapshot analysis to diagnose memory leaks, reducing memory usage from **40% to 3%**; achieved **90% unit/integration test coverage**.
